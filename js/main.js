@@ -136,9 +136,9 @@ $('#hitokoto').click(function () {
 //获取天气
 //请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
 //请前往 https://dev.qweather.com/ 申请 key
-const add_id = "vcpmlmqiqnjpxwq1"; // app_id
-const app_secret = "PeYnsesgkmK7qREhIFppIcsoN0ZShv3c"; // app_secret
-const key = "691d007d585841c09e9b41e79853ecc2" // key
+const add_id = "fieliipflhsrggiy"; // app_id
+const app_secret = "oz7liWTUMRhNPEc12wu3nemVt4g8AYYs"; // app_secret
+const key = "3c946fa1c3a945e98dd47ae3fff3ca30" // key
 function getWeather() {
     fetch("https://www.mxnzp.com/api/ip/self?app_id=" + add_id + "&app_secret=" + app_secret)
         .then(response => response.json())
@@ -403,19 +403,14 @@ color: #425AEF;
 let styleContent = `
 color: rgb(30,152,255);
 `
-let title1 = 'Auroraの主页'
+let title1 = 'Mogoの主页'
 let title2 = `
 
-██████╗ ██╗   ██╗██╗    ██╗██╗███╗   ██╗██████╗ 
-██╔══██╗╚██╗ ██╔╝██║    ██║██║████╗  ██║██╔══██╗
-██████╔╝ ╚████╔╝ ██║ █╗ ██║██║██╔██╗ ██║██║  ██║
-██╔══██╗  ╚██╔╝  ██║███╗██║██║██║╚██╗██║██║  ██║
-██████╔╝   ██║   ╚███╔███╔╝██║██║ ╚████║██████╔╝
-╚═════╝    ╚═╝    ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═════╝               
+Momo Trace             
 `
 let content = `
-博客:  https://bolo.wuhobin.top
-Github:  https://github.com/wuhobin
+博客:  https://cnblogs.com/momotrace/
+Github:  https://github.com/momotrace/
 `
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)
