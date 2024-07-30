@@ -1,30 +1,30 @@
 {
-    "title": "Auroraの主页",
+    "title": "Mogoの主页",
     "description": "一个默默无闻的主页",
-    "keywords": "Aurora,个人主页",
-    "author": "Aurora",
+    "keywords": "Mogo,个人主页",
+    "author": "Mogo",
     "logo_img": "./img/icon/avatar.jpg",
-    "logo_text_1": "wuhobin",
+    "logo_text_1": "moxan",
     "logo_text_2": "top",
-    "github": "wuhobin",
-    "qq": "1289066006",
-    "email": "1289066006@qq.com",
-    "bilibili": "495003013",
+    "github": "momotrace",
+    "qq": "1610737346",
+    "email": "trace@moxan.top",
+    "bilibili": "2072160816",
     "facebook": "bottom_user",
     "link_1": [
-        "http://blog.wuhobin.top/",
+        "http://cnblogs.com/momotrace/",
         "fa-solid fa-blog",
         "博客"
     ],
     "link_2": [
-        "https://tongji.baidu.com/",
+        "https://top.baidu.com/board",
         "fa-solid fa-cloud",
-        "统计"
+        "热搜"
     ],
     "link_3": [
-        "http://www.wuhobin.top/",
+        "https://music.163.com/#/user/home?id=2011267708",
         "fa-solid fa-compass",
-        "起始页"
+        "音乐"
     ],
     "link_4": [
         "https://codenote.wuhobin.top",
@@ -32,15 +32,15 @@
         "编程宝典"
     ],
     "link_5": [
-        "http://www.wuhobin.top/",
+        "https://www.tboxn.com/",
+        "fa-solid fa-flask",
+        "网址集"
+    ],
+    "link_6": [
+        "http://www.moxan.top/",
         "fa-solid fa-flask",
         "开发中..."
     ],
-    "link_6": [
-        "http://www.wuhobin.top/",
-        "fa-solid fa-flask",
-        "敬请期待..."
-    ],
-    "Copyright_text": "Aurora",
-    "beian": "鄂ICP备20006685号"
+    "Copyright_text": "Mogo",
+    "beian": "蒙ICP备20246685号"
 }
