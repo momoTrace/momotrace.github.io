@@ -1,7 +1,7 @@
 English | [Chinese](./README.md)
 
 <p>
-<strong><h2>Auroraの主页</h2></strong>
+<strong><h2>Mogoの主页</h2></strong>
 Simple little homepage, had enough of the original one and made a new one
 </p>
 
@@ -13,7 +13,7 @@ Simple little homepage, had enough of the original one and made a new one
 
 >Due to CDN caching, you may need `Ctrl` + `F5` to force a browser cache refresh to see the latest results
 
-- [Auroraの主页](http://www.wuhobin.top)
+- [Mogoの主页](http://www.moxan.top)
 
 
 ### Functions
