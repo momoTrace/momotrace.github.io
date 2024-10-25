@@ -82,8 +82,8 @@ function getBgImg() {
 let bg_img_preinstall = {
     "type": "1", // 1:默认背景 2:每日一图 3:随机风景 4:随机动漫
     "2": "https://api.dujin.org/bing/1920.php", // 每日一图
-    "3": "https://api.ixiaowai.cn/gqapi/gqapi.php", // 随机风景
-    "4": "https://api.ixiaowai.cn/api/api.php" // 随机动漫
+    "3": "https://tu.ltyuanfang.cn/api/fengjing.php", // 随机风景
+    "4": "http://www.98qy.com/sjbz/api.php" // 随机动漫
 };
 
 // 更改背景图片
