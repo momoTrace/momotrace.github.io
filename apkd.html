@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>默纤论坛安卓客户端下载</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f6fa;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .version-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .version-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .version-title {
+            color: #3498db;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #2980b9;
+        }
+
+        .notice {
+            background: #fff9c4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #ffe082;
+        }
+
+        .compatibility {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>默纤论坛安卓客户端</h1>
+            <p>请根据您的设备选择合适版本下载</p>
+        </header>
+
+        <!-- 稳定版 -->
+        <div class="version-card">
+            <h2 class="version-title">稳定版 3.0.1</h2>
+            <p><span class="compatibility">兼容要求：</span>Android 9.0 及以上</p>
+            <p><span class="compatibility">更新日期：</span>2025年3月15日</p>
+            <p><span class="compatibility">文件大小：</span>803 KB</p>
+            <a href="https://b.moxan.top/files/863b212e-5ae2-4a18-a321-98c29fbc510f" class="download-btn" download>立即下载</a>
+        </div>
+
+        <!-- 兼容版 -->
+        <div class="version-card">
+            <h2 class="version-title">兼容版 2.1.0</h2>
+            <p><span class="compatibility">兼容要求：</span>Android 5.0 及以上</p>
+            <p><span class="compatibility">更新日期：</span>2025年2月5日</p>
+            <p><span class="compatibility">文件大小：</span>3.2 MB</p>
+            <a href="https://b.moxan.top/files/f2a02686-1de4-4b92-9774-9912966d01bd" class="download-btn" download>历史版本下载</a>
+        </div>
+
+        <div class="notice">
+            <h3>安装须知：</h3>
+            <ul>
+                <li>请确保设备已开启「未知来源应用安装」权限</li>
+                <li>3.0版本包含最新功能，推荐新用户优先下载</li>
+                <li>2.1版本适用于旧型号设备，功能保持稳定</li>
+                <li>下载前建议连接Wi-Fi网络</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
