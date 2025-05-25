@@ -1,9 +1,9 @@
 {
     "title": "Mogoの主页",
     "description": "一个默默无闻的主页",
-    "keywords": "Mogo,个人主页",
+    "keywords": "momotrace,Mogo,个人主页",
     "author": "Mogo",
-    "logo_img": "./img/icon/avatar.jpg",
+    "logo_img": "https://images.cnblogs.com/cnblogs_com/blogs/720650/galleries/2280396/o_230318010113_666.png",
     "logo_text_1": "moxan",
     "logo_text_2": "top",
     "github": "momotrace",
@@ -32,12 +32,12 @@
         "Moxan BBS"
     ],
     "link_5": [
-        "https://www.tboxn.com/",
+        "https://nev.moxan.top/",
         "fa-solid fa-compass",
         "网址集"
     ],
     "link_6": [
-        "http://www.moxan.top/",
+        "#",
         "fa-solid fa-flask",
         "开发中..."
     ],
