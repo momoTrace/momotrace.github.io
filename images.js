@@ -90,12 +90,12 @@ window.MoxanImages = {
 
   games: [
     {
-      name: 'Minecraft', genre: 'SANDBOX / BUILD', note: '方块世界与慢慢长大的基地。',
-      src: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=780&q=80', alt: '山谷与湖泊'
+      name: 'Minecraft', genre: 'SANDBOX / BUILD', note: '默纤特区😋。',
+      src: './assets/images/mc.png', alt: '山谷与湖泊'
     },
     {
       name: 'The Legend of Zelda', genre: 'ADVENTURE / HYRULE', note: '探索、解谜，还有旷野的风。',
-      src: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=780&q=80', alt: '山间日出与湖面'
+      src: './assets/images/zelda.jpg', alt: '山间日出与湖面'
     },
     {
       name: '王牌竞速', genre: 'RACING / ASPHALT', note: '巅峰车神（doge',
