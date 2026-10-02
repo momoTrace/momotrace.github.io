@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08121d">
+  <meta name="description" content="Mogoの主页。默纤 Moxan 的赛博桌面：前端、音乐、游戏与正在搭建的网络角落。">
+  <meta property="og:title" content="Mogoの主页 — Moxan">
+  <meta property="og:description" content="玄不救非，氪不改命。">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://moxan.top/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='9' fill='%230e1b29'/%3E%3Cpath d='M14 47V18h6l12 15 12-15h6v29h-7V29L32 41 21 29v18z' fill='%23b9dce5'/%3E%3C/svg%3E">
+  <title>Mogoの主页 · 默纤 Moxan</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-extra.css">
+  <link rel="stylesheet" href="styles-floating-orb.css">
+  <link rel="stylesheet" href="styles-wallpaper-profiles.css">
+</head>
+<body class="booting">
+  <div class="wallpaper wallpaper-base" id="wallpaperBase" aria-hidden="true"></div>
+  <div class="wallpaper wallpaper-next" id="wallpaperNext" aria-hidden="true"></div>
+  <video class="wallpaper-video" id="wallpaperVideo" aria-hidden="true" muted loop playsinline></video>
+  <div class="wallpaper-overlay" aria-hidden="true"></div>
+  <div class="ambient-light" aria-hidden="true"></div>
+  <canvas id="weatherCanvas" class="weather-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="desktop" id="desktop">
+    <header class="topbar">
+      <a class="wordmark" href="#home" aria-label="Moxan 桌面">
+        <span class="wordmark-mark">M</span>
+        <span class="wordmark-copy"><b>MOXAN</b><small>PERSONAL DESKTOP</small></span>
+      </a>
+      <div class="topbar-center"><span class="live-dot"></span><span>MOXAN NETWORK</span><i></i><span id="topWeather">RAIN MODE</span></div>
+      <button class="top-clock" data-open="clock" aria-label="打开时钟窗口"><span id="topTime">--:--</span><small id="topDate">----</small></button>
+    </header>
+
+    <section class="hero-stage" id="home" aria-label="Mogo 个人主页">
+      <div class="hero-card glass" id="heroCard">
+        <div class="hero-reflection" aria-hidden="true"></div>
+        <div class="hero-kicker"><span class="window-glyph">◫</span><span>MOXAN / USER SESSION</span><span class="kicker-line"></span><span class="micro-status"><i></i> ONLINE</span></div>
+        <div class="hero-main">
+          <div class="avatar-frame" aria-label="Mogo 的 M 字母头像">
+            <div class="avatar-halo"></div><div class="avatar-monogram">Mo</div><span class="avatar-presence" title="在线"></span>
+            <span class="avatar-index">USER 01</span>
+          </div>
+          <div class="hero-copy">
+            <p class="eyebrow">你好，欢迎来到我的桌面 <span class="eyebrow-mark">✳</span></p>
+            <h1><span class="hero-name">Mogo</span><span class="hero-kanji">の主页</span></h1>
+            <div class="type-line"><span class="type-prefix">C:\MOXAN\</span><span id="typewriter">Music / Code / Life.</span><span class="type-caret">_</span></div>
+            <p class="hero-signature">玄不救非，<br class="mobile-break">氪不改命。</p>
+            <div class="role-list"><span>前端架构开发</span><b></b><span>网易云音乐人</span><b></b><span>电音粉</span></div>
+          </div>
+        </div>
+        <div class="hero-footer"><span><small>LOCAL PROFILE</small><b>默纤 Moxan</b></span><span><small>LOCATION</small><b>Digital Space</b></span><span><small>SYSTEM</small><b>ACRYLIC 11.0</b></span><button class="text-action" data-open="about">查看档案 <span>↗</span></button></div>
+      </div>
+      <div class="hero-aside">
+        <div class="aside-widget glass"><div class="widget-head"><span>ATMOSPHERE</span><span class="tiny-square">◧</span></div><div class="weather-readout"><span class="weather-icon">⌁</span><div><strong>雨夜模式</strong><small>静静听雨，也听歌</small></div></div><div class="widget-divider"></div><div class="signal-row"><span>NETWORK</span><span class="signal-bars"><i></i><i></i><i></i><i></i></span><b>CONNECTED</b></div></div>
+        <div class="aside-note"><span class="note-index">Nº 001</span><span>普通の网站<br>持续建设中。</span><span class="note-corner">↘</span></div>
+      </div>
+      <div class="hero-coordinate">31°13' N&nbsp; 121°28' E <span>·</span> DYNAMIC WALLPAPER</div>
+    </section>
+
+    <section class="launch-area" aria-label="桌面应用">
+      <div class="launch-heading"><span>快速访问</span><span class="launch-rule"></span><small>SELECT A WINDOW</small></div>
+      <nav class="launcher" id="launcher" aria-label="打开桌面窗口"></nav>
+    </section>
+
+    <div class="desktop-footer"><span>雨落在玻璃上，城市还没有睡。</span><span>MOXAN.TOP <i>·</i> PERSONAL NETWORK</span></div>
+  </main>
+
+  <div id="windowLayer" class="window-layer" aria-live="polite"></div>
+  <div class="start-menu glass" id="startMenu" aria-hidden="true"></div>
+  <div class="context-menu glass" id="contextMenu" role="menu" aria-label="桌面右键菜单" hidden></div>
+  <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="false"></div>
+
+  <aside class="music-drop glass" id="musicDrop" aria-label="网易云音乐快捷播放器">
+    <div class="music-drop-glint" aria-hidden="true"></div>
+    <button class="music-drop-toggle" id="musicDropToggle" type="button" aria-label="打开音乐播放器" aria-expanded="false" title="打开音乐播放器"><img id="musicDropOrbCover" alt=""><span aria-hidden="true">♫</span></button>
+    <div class="music-drop-head"><span><i></i> MOXAN · MUSIC</span><button class="music-drop-grip" id="musicDropGrip" type="button" aria-label="按住上下拖动音乐控件" title="按住上下拖动">⠿</button></div>
+    <div class="music-drop-cover"><img id="musicDropCover" alt="专辑封面"><span aria-hidden="true">♫</span></div>
+    <div class="music-drop-meta"><b id="musicDropTitle">正在连接歌单</b><span id="musicDropArtist">网易云音乐</span><small id="musicDropAlbum">MOGO PLAYLIST</small></div>
+    <div class="music-drop-controls" aria-label="音乐控制">
+      <button type="button" data-floating-music-action="previous" aria-label="上一首" title="上一首">◂|</button>
+      <button class="music-drop-play" id="musicDropPlay" type="button" data-floating-music-action="toggle" aria-label="播放" title="播放或暂停">▶</button>
+      <button type="button" data-floating-music-action="next" aria-label="下一首" title="下一首">|▸</button>
+    </div>
+    <button class="music-drop-mode" id="musicDropMode" type="button" data-floating-music-action="mode" aria-label="播放模式：随机播放，点击切换"><span class="music-mode-icon" aria-hidden="true">⤨</span><span>随机播放</span></button>
+    <div class="music-drop-lyric"><small>NOW PLAYING</small><p id="musicDropLyric" aria-live="polite">入站后尝试随机播放</p></div>
+  </aside>
+
+  <nav class="taskbar glass" aria-label="桌面任务栏">
+    <button class="start-button" id="startButton" aria-label="打开 Moxan 菜单" aria-expanded="false"><span class="start-logo">M</span><span class="start-label">Moxan</span></button>
+    <span class="taskbar-separator"></span>
+    <div class="taskbar-windows" id="taskbarWindows" aria-label="已打开的窗口"></div>
+    <div class="taskbar-tray"><button class="tray-weather" data-open="settings" aria-label="背景设置"><span>◌</span><b>雨夜</b></button><span class="tray-network"><i></i><span>Wi‑Fi</span></span><button class="tray-time" data-open="clock"><b id="trayTime">--:--</b><small id="trayDate">----</small></button></div>
+  </nav>
+  <nav class="mobile-nav glass" id="mobileNav" aria-label="移动端导航"></nav>
+
+  <div class="entry-screen" id="entryScreen" aria-hidden="true"><div class="entry-scan"></div><div class="entry-mark"><span class="entry-glyph">M</span><span class="entry-word">MOXAN <i>OS</i></span><span class="entry-caption" id="entryCaption">RESTORING DIGITAL SPACE</span><span class="entry-progress"><i></i></span></div><button class="entry-skip" id="skipIntro">跳过 <span>ESC</span></button></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ripple" id="cursorRipple" aria-hidden="true"></div>
+  <audio id="audioPlayer" preload="none" crossorigin="anonymous"></audio>
+  <script src="images.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="live2d.js" defer></script>
+  <script src="music-orb.js"></script>
+  <script src="wallpaper-profiles.js"></script>
+</body>
+</html>

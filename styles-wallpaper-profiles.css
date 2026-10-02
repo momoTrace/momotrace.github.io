@@ -1,0 +1,22 @@
+.wallpaper-profile-launcher,.wallpaper-profile-panel{font:500 13px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;color:#f7f6fa}
+.wallpaper-profile-launcher{position:fixed;right:18px;bottom:18px;z-index:1200;padding:10px 15px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(24,25,32,.76);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 8px 28px rgba(0,0,0,.25);cursor:pointer;transition:transform .2s ease,background .2s ease}
+.wallpaper-profile-launcher:hover{transform:translateY(-2px);background:rgba(37,38,48,.94)}
+.wallpaper-profile-panel{position:fixed;right:18px;bottom:68px;z-index:1201;width:min(320px,calc(100vw - 28px));max-height:calc(100vh - 94px);overflow:auto;box-sizing:border-box;padding:17px;border:1px solid rgba(255,255,255,.2);border-radius:20px;background:rgba(23,24,31,.92);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 18px 60px rgba(0,0,0,.38)}
+.wallpaper-profile-panel[hidden]{display:none!important}
+.wallpaper-profile-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:9px}
+.wallpaper-profile-head strong{display:block;font-size:16px;font-weight:700}
+.wallpaper-profile-head small{display:block;max-width:230px;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:rgba(255,255,255,.65)}
+.wallpaper-profile-head button{width:28px;height:28px;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:inherit;font-size:20px;line-height:1;cursor:pointer}
+.wallpaper-profile-help{margin:8px 0 14px;color:rgba(255,255,255,.65);font-size:12px}
+.wallpaper-profile-panel>label{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:7px 0;color:rgba(255,255,255,.88)}
+.wallpaper-profile-panel>label span{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.62)}
+.wallpaper-profile-panel input{box-sizing:border-box;width:82px;padding:6px 8px;border:1px solid rgba(255,255,255,.16);border-radius:8px;outline:none;background:rgba(255,255,255,.08);color:#fff;font:inherit;text-align:right}
+.wallpaper-profile-panel input:focus{border-color:rgba(174,156,255,.8);box-shadow:0 0 0 2px rgba(174,156,255,.18)}
+.wallpaper-profile-actions{display:flex;gap:8px;margin-top:14px}
+.wallpaper-profile-actions button{flex:1;padding:9px 10px;border:1px solid rgba(255,255,255,.16);border-radius:10px;background:rgba(255,255,255,.08);color:#fff;font:inherit;cursor:pointer}
+.wallpaper-profile-actions [data-profile-save]{border-color:transparent;background:#8066d9;font-weight:650}
+.wallpaper-profile-status{display:block;min-height:18px;margin-top:10px;color:rgba(255,255,255,.65);font-size:11px}
+@media(max-width:640px){
+  .wallpaper-profile-launcher{right:10px;bottom:calc(12px + env(safe-area-inset-bottom));padding:9px 12px;font-size:12px}
+  .wallpaper-profile-panel{right:10px;bottom:calc(58px + env(safe-area-inset-bottom));width:min(320px,calc(100vw - 20px));max-height:calc(100dvh - 78px - env(safe-area-inset-bottom));}
+}

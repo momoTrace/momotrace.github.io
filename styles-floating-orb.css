@@ -1,0 +1,23 @@
+/* Floating player default orb and expanded panel */
+.music-drop:not(.is-open){
+  width:68px!important;height:68px!important;min-height:68px;padding:0!important;
+  display:grid!important;place-items:center;overflow:visible;border-radius:50%!important;
+  background:rgba(20,22,28,.58);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  box-shadow:0 10px 34px rgba(0,0,0,.3),inset 0 0 0 1px rgba(255,255,255,.2);
+  transition:width .28s ease,height .28s ease,border-radius .28s ease,background .28s ease;
+}
+.music-drop:not(.is-open)>:not(.music-drop-toggle){display:none!important}
+.music-drop-toggle{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;border-radius:50%;overflow:hidden;
+  display:grid;place-items:center;background:linear-gradient(145deg,rgba(255,255,255,.24),rgba(255,255,255,.04));
+  color:#fff;font-size:28px;cursor:pointer;z-index:5;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);touch-action:none;}
+.music-drop-toggle img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78}
+.music-drop-toggle span{position:relative;z-index:1;text-shadow:0 1px 8px rgba(0,0,0,.65)}
+.music-drop:not(.is-open) .music-drop-toggle span{opacity:.9}
+.music-drop.is-open .music-drop-toggle{inset:8px 8px auto auto;width:28px;height:28px;border-radius:50%;font-size:19px;background:rgba(0,0,0,.42)}
+.music-drop.is-open .music-drop-toggle img{display:none}
+.music-drop.is-open .music-drop-toggle span{line-height:1}
+.music-drop.is-open{transition:width .28s ease,height .28s ease,border-radius .28s ease}
+@media(max-width:640px){
+  .music-drop:not(.is-open){left:10px!important;right:auto!important;width:60px!important;height:60px!important}
+  .music-drop.is-open{left:10px!important;right:auto!important;width:166px!important}
+}
